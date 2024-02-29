@@ -232,60 +232,60 @@ class _CheckOutScreenState extends State<CheckOutScreen> {
                                   const SizedBox(height: 10),
 
 
-                                  MyGoogleText(
-                                    text: lang.S.of(context).shippingAddress,
-                                    fontSize: 20,
-                                    fontColor: isDark ? darkTitleColor : lightTitleColor,
-                                    fontWeight: FontWeight.normal,
-                                  ),
-                                  const SizedBox(height: 10),
-                                  Container(
-                                    padding: const EdgeInsets.all(8),
-                                    decoration: BoxDecoration(
-                                      border: Border.all(width: 1, color: secondaryColor3),
-                                      borderRadius: const BorderRadius.all(Radius.circular(15)),
-                                    ),
-                                    child: Column(
-                                      mainAxisSize: MainAxisSize.min,
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        Row(
-                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                          children: [
-                                            MyGoogleText(
-                                              text: '${snapShot.data!.shipping!.firstName} ${snapShot.data!.shipping!.lastName}',
-                                              fontSize: 16,
-                                              fontColor: isDark ? darkTitleColor : lightTitleColor,
-                                              fontWeight: FontWeight.normal,
-                                            ),
-                                            TextButton(
-                                              onPressed: () {
-                                                AddNewAddressTwo(
-                                                  initShipping: snapShot.data!.shipping,
-                                                  initBilling: snapShot.data!.billing,
-                                                ).launch(context);
-                                              },
-                                              child: MyGoogleText(
-                                                text: lang.S.of(context).changeButton,
-                                                fontSize: 16,
-                                                fontColor: secondaryColor1,
-                                                fontWeight: FontWeight.normal,
-                                              ),
-                                            )
-                                          ],
-                                        ),
-                                        Flexible(
-                                          child: Text(
-                                            '${snapShot.data!.shipping!.address1}, ${snapShot.data!.shipping!.address2}, ${snapShot.data!.shipping!.city}, ${snapShot.data!.shipping!.state}, ${snapShot.data!.shipping!.postcode}, ${snapShot.data!.shipping!.country}, ${snapShot.data!.billing!.phone}',
-                                            maxLines: 3,
-                                            style: GoogleFonts.dmSans(
-                                              textStyle: const TextStyle(),
-                                            ),
-                                          ),
-                                        )
-                                      ],
-                                    ),
-                                  ),
+                                  // MyGoogleText(
+                                  //   text: lang.S.of(context).shippingAddress,
+                                  //   fontSize: 20,
+                                  //   fontColor: isDark ? darkTitleColor : lightTitleColor,
+                                  //   fontWeight: FontWeight.normal,
+                                  // ),
+                                  // const SizedBox(height: 10),
+                                  // Container(
+                                  //   padding: const EdgeInsets.all(8),
+                                  //   decoration: BoxDecoration(
+                                  //     border: Border.all(width: 1, color: secondaryColor3),
+                                  //     borderRadius: const BorderRadius.all(Radius.circular(15)),
+                                  //   ),
+                                  //   child: Column(
+                                  //     mainAxisSize: MainAxisSize.min,
+                                  //     crossAxisAlignment: CrossAxisAlignment.start,
+                                  //     children: [
+                                  //       Row(
+                                  //         mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  //         children: [
+                                  //           MyGoogleText(
+                                  //             text: '${snapShot.data!.shipping!.firstName} ${snapShot.data!.shipping!.lastName}',
+                                  //             fontSize: 16,
+                                  //             fontColor: isDark ? darkTitleColor : lightTitleColor,
+                                  //             fontWeight: FontWeight.normal,
+                                  //           ),
+                                  //           TextButton(
+                                  //             onPressed: () {
+                                  //               AddNewAddressTwo(
+                                  //                 initShipping: snapShot.data!.shipping,
+                                  //                 initBilling: snapShot.data!.billing,
+                                  //               ).launch(context);
+                                  //             },
+                                  //             child: MyGoogleText(
+                                  //               text: lang.S.of(context).changeButton,
+                                  //               fontSize: 16,
+                                  //               fontColor: secondaryColor1,
+                                  //               fontWeight: FontWeight.normal,
+                                  //             ),
+                                  //           )
+                                  //         ],
+                                  //       ),
+                                  //       Flexible(
+                                  //         child: Text(
+                                  //           '${snapShot.data!.shipping!.address1}, ${snapShot.data!.shipping!.address2}, ${snapShot.data!.shipping!.city}, ${snapShot.data!.shipping!.state}, ${snapShot.data!.shipping!.postcode}, ${snapShot.data!.shipping!.country}, ${snapShot.data!.billing!.phone}',
+                                  //           maxLines: 3,
+                                  //           style: GoogleFonts.dmSans(
+                                  //             textStyle: const TextStyle(),
+                                  //           ),
+                                  //         ),
+                                  //       )
+                                  //     ],
+                                  //   ),
+                                  // ),
 
 
                                   const SizedBox(height: 10),

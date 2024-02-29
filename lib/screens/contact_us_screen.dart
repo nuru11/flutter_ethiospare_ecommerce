@@ -19,7 +19,7 @@ class ContactUsScreen extends StatelessWidget {
               title: 'Phone Call',
               icon: Icons.phone,
               onPressed: () async {
-                Uri uri = Uri.parse('tel:+251966202667');
+                Uri uri = Uri.parse('tel:+251913918821');
                 if (!await launcher.launchUrl(uri)) {
                   debugPrint(
                       "Could not launch the uri"); // because the simulator doesn't have the phone app
@@ -41,7 +41,7 @@ class ContactUsScreen extends StatelessWidget {
               icon: Icons.message,
               onPressed: () => launcher.launchUrl(
                 Uri.parse(
-                  'sms:+251966202667${Platform.isAndroid ? '?' : '&'}body=Message from Flutter app',
+                  'sms:+251913918821${Platform.isAndroid ? '?' : '&'}body=Message from Flutter app',
                 ),
               ),
             ),
@@ -49,14 +49,14 @@ class ContactUsScreen extends StatelessWidget {
               title: 'Telegram',
               icon: FontAwesomeIcons.telegram,
               onPressed: () => launcher.launchUrl(
-                Uri.parse('https://t.me/nuru881'),
+                Uri.parse('https://t.me/ethio_online_spare'),
               ),
             ),
             launchButton(
               title: 'WhatsApp',
               icon: FontAwesomeIcons.whatsapp,
               onPressed: () => launcher.launchUrl(
-                Uri.parse('https://wa.me/+251966202667'),
+                Uri.parse('https://wa.me/+251913918821'),
               ),
             ),
             launchButton(

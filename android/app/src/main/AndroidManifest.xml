@@ -22,7 +22,7 @@
 </queries>
 
    <application
-        android:label="ESM4"
+        android:label="ESM"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

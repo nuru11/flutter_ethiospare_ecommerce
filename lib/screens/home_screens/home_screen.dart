@@ -173,7 +173,7 @@ class _HomeScreenState extends State<HomeScreen> {
     children: [
       ElevatedButton(
         onPressed: () {
-          launch('tel:+251966202667');
+          launch('tel:+251913918821');
         },
         style: ElevatedButton.styleFrom(
           primary: Color(0xFF000080),
@@ -187,7 +187,7 @@ class _HomeScreenState extends State<HomeScreen> {
       ElevatedButton(
         onPressed: () {
         //  launch('https://t.me/nuru881'); 
-         launch('sms:+251966202667');
+         launch('sms:+251913918821');
        //  launch('https://wa.me/+251966202667');
         },
         style: ElevatedButton.styleFrom(
@@ -212,13 +212,36 @@ class _HomeScreenState extends State<HomeScreen> {
         Expanded(
           child: ListView(
             children: [
+              // DrawerHeader(
+              //   child: Center(
+              //     child: Image(
+              //       image: AssetImage('images/lead.png'),
+              //       width: 500, // Increase the width to your desired size
+              //       height: 500, // Increase the height to your desired size
+              //     ),
+              //   ),
+                
+              // ),
+
               DrawerHeader(
-                child: Center(
-                  child: Image(
-                    image: AssetImage('images/lead.png'),
-                    width: 500, // Increase the width to your desired size
-                    height: 500, // Increase the height to your desired size
-                  ),
+                child: Column(
+                  children: [
+                    Center(
+                      child: Image(
+                        image: AssetImage('images/lead.jpg'),
+                        width: 100, // Increase the width to your desired size
+                        height: 100, // Increase the height to your desired size
+                      ),
+                    ),
+                    Text(
+                      "Ethio Spare Market",
+                      style: TextStyle(
+                        fontSize: 17,
+                        fontWeight: FontWeight.bold,
+                        color: Color(0xFF000080),
+                      ),
+                    ),
+                  ],
                 ),
               ),
               ListTile(
@@ -1316,6 +1339,50 @@ Padding(
                                }, loading: () {
                                  return const Center(child: ProductShimmerWidget());
                                }),
+
+                               Container(
+      margin: const EdgeInsets.symmetric(vertical: 3),
+      height: 1,
+      color: Colors.grey[300],
+    ),
+
+    // Footer
+    // Footer with clickable text
+    GestureDetector(
+      onTap: () {
+        // Open URL when clicked
+        launch('https://addisway.com/');
+      },
+      child: Container(
+        alignment: Alignment.center,
+        margin: const EdgeInsets.symmetric(vertical: 20),
+        child: RichText(
+          text: TextSpan(
+            style: TextStyle(
+              fontSize: 14,
+              fontStyle: FontStyle.italic,
+              fontWeight: FontWeight.w500,
+              color: Colors.grey[600],
+            ),
+            children: [
+              TextSpan(
+                text: 'developed by ',
+              ),
+              TextSpan(
+                text: 'Addisway Technology Solution',
+                style: TextStyle(
+                  color: Color(0xFF000080),// Set the word "Addisway" color to blue
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    ),
+  
+  
+  
+                              
                              ],
                            ),
                          )
